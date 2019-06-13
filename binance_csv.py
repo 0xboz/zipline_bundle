@@ -182,8 +182,6 @@ def csv_to_bundle(reload_tickers=True, reload_csv=True, interval='1m'):
         metadata['exchange'] = "Binance"
         asset_db_writer.write(equities=metadata)
         print(metadata)
+        adjustment_writer.write()
 
     return ingest
-
-
-register_calendar('Binance_csv', BinanceExchangeCalendar())

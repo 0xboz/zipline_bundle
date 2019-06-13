@@ -1,8 +1,6 @@
 from datetime import time
 
 from trading_calendars import TradingCalendar
-from trading_calendars import register_calendar
-from zipline.utils.memoize import lazyval
 
 
 class BinanceExchangeCalendar(TradingCalendar):

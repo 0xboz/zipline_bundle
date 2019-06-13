@@ -156,8 +156,6 @@ def api_to_bundle(interval='1m'):
 
         asset_db_writer.write(equities=metadata)
         print(metadata)
+        adjustment_writer.write()
 
     return ingest
-
-
-register_calendar('Binance_api', BinanceExchangeCalendar())

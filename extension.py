@@ -6,13 +6,13 @@ from zipline.data.bundles.csvdir import csvdir_equities
 register(
     'binance_api',
     api_to_bundle(interval='1d'),
-    calendar_name='Binance_api',
+    calendar_name='Binance',
 )
 
 register(
     'binance_csv',
     csv_to_bundle(reload_csv=False, interval='1d'),
-    calendar_name='Binance_csv',
+    calendar_name='Binance',
 )
 
 register(
